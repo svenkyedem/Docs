@@ -19,8 +19,8 @@ yum install git
 ## Install Docker
 ```sh
 yum install docker
-systemctl start docker
-systemctl enable docker
+service docker start
+chkconfig docker on // service will be on even though server is rebooted
 ```
 
 ## Assign shell to jenkins user
